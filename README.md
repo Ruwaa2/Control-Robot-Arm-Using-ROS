@@ -54,6 +54,7 @@ Open Ubuntu's Terminal and type the follwing:
 `sudo nano ~/.bashrc`
 
 Scroll down to reach the end of the (bashrc) file and add the link between the parantheses:
+
 (source /home/ruwaa/catkin_ws/devel/setup.bash), then press ctrl + o, then press Enter, then press ctrl + x
 
 Note: in the link above you should write the name of your system instead of 'ruwaa'
