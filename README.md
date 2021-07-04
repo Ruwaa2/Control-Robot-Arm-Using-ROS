@@ -1,6 +1,10 @@
 # Control-Robot-Arm-Using-ROS
 
+To use the robot arm package, first you have to install Robot Operating System (ROS) following the steps below.
 
+Note: in this project I used ROS Melodic, if you want to use ROS Kinetic then replace 'melodic' with 'kinetic'
+
+Open Ubuntu's Terminal and type the follwing:
 
 `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
 
@@ -49,15 +53,13 @@
 
 `sudo nano ~/.bashrc`
 
-at the end of the (bashrc) file add the follwing line:
-(source /home/ruwaa/catkin_ws/devel/setup.bash)
-then 
-ctrl + o
-then
-Enter
-then
-ctrl + x
+Scroll down to reach the end of the (bashrc) file and add the link between the parantheses:
+(source /home/ruwaa/catkin_ws/devel/setup.bash), then press ctrl + o, then press Enter, then press ctrl + x
+
+Note: in the link above you should write the name of your system instead of 'ruwaa'
 
 `source ~/.bashrc`
 
 `roslaunch robot_arm_pkg check_motors.launch`
+
+Now the robot arm package is launched.
