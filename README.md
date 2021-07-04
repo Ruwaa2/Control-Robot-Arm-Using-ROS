@@ -2,58 +2,62 @@
 
 
 
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
 
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get install ros-melodic-desktop-full
+`sudo apt-get install ros-melodic-desktop-full`
 
-apt-cache search ros-melodic
+`apt-cache search ros-melodic`
 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+`echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
+`source ~/.bashrc`
 
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+`sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
 
-sudo apt install python-rosdep
+`sudo apt install python-rosdep`
 
-sudo rosdep init
+`sudo rosdep init`
 
-rosdep update
+`rosdep update`
 
-sudo apt-get install ros-noetic-catkin
+`sudo apt-get install ros-noetic-catkin`
 
-mkdir -p ~/catkin_ws/src
+`mkdir -p ~/catkin_ws/src`
 
-cd ~/catkin_ws/
+`cd ~/catkin_ws/`
 
-catkin_make
+`catkin_make`
 
-cd ~/catkin_ws/src
+`cd ~/catkin_ws/src`
 
-git clone https://github.com/smart-methods/arduino_robot_arm.git 
+`git clone https://github.com/smart-methods/arduino_robot_arm.git`
 
-cd ~/catkin_ws
+`cd ~/catkin_ws`
 
-rosdep install --from-paths src --ignore-src -r -y
+`rosdep install --from-paths src --ignore-src -r -y`
 
-sudo apt-get install ros-melodic-moveit
+`sudo apt-get install ros-melodic-moveit`
 
-sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
+`sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui`
 
-sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
+`sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher`
 
-sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
+`sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control`
 
-sudo nano ~/.bashrc
+`sudo nano ~/.bashrc`
 
 at the end of the (bashrc) file add the follwing line:
 (source /home/ruwaa/catkin_ws/devel/setup.bash)
 then 
 ctrl + o
+then
+Enter
+then
+ctrl + x
 
-source ~/.bashrc
+`source ~/.bashrc`
 
-roslaunch robot_arm_pkg check_motors.launch
+`roslaunch robot_arm_pkg check_motors.launch`
