@@ -2,7 +2,7 @@
 
 To use the robot arm package, first you have to install Robot Operating System (ROS) following the steps below.
 
-Note: in this project I used ROS Melodic, if you want to use ROS Kinetic then replace 'melodic' with 'kinetic'
+Note: in this project I used ROS Melodic, if you want to use ROS Kinetic then replace 'melodic' with 'kinetic'.
 
 Open Ubuntu's Terminal and type the follwing:
 
@@ -57,7 +57,7 @@ Scroll down to reach the end of the (bashrc) file and add the link between the p
 
 (source /home/ruwaa/catkin_ws/devel/setup.bash), then press ctrl + o, then press Enter, then press ctrl + x
 
-Note: in the link above you should write the name of your system instead of 'ruwaa'
+Note: in the link above you should write the name of your system instead of 'ruwaa'.
 
 `source ~/.bashrc`
 
